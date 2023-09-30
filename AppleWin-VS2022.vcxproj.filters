@@ -274,6 +274,7 @@
     <ClCompile Include="source\MockingboardCardManager.cpp">
       <Filter>Source Files\Emulator</Filter>
     </ClCompile>
+    <ClCompile Include="source\FujiNet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\CommonVICE\6510core.h">
@@ -618,6 +619,7 @@
     <ClInclude Include="source\MockingboardDefs.h">
       <Filter>Source Files\Emulator</Filter>
     </ClInclude>
+    <ClInclude Include="source\FujiNet.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resource\Applewin.bmp">

@@ -23,7 +23,7 @@ public:
 		InsertInternal(SLOT5, CT_Empty);
 		InsertInternal(SLOT6, CT_Disk2);
 		InsertInternal(SLOT7, CT_Empty);
-		InsertAuxInternal(CT_Extended80Col);	// For Apple //e and above
+	 	InsertAuxInternal(CT_Extended80Col);	// For Apple //e and above
 	}
 	~CardManager(void)
 	{
@@ -40,7 +40,7 @@ public:
 		_ASSERT(m_slot[slot]);
 		return *m_slot[slot];
 	}
-	Card* GetObj(UINT slot)
+	Card* GetObj(UINT slot) 
 	{
 		return m_slot[slot];
 	}

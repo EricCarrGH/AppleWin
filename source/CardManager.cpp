@@ -43,6 +43,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #include "SNESMAX.h"
 #include "Uthernet1.h"
 #include "Uthernet2.h"
+#include "FujiNet.h"
 #include "VidHD.h"
 #include "LanguageCard.h"
 #include "Memory.h"
@@ -115,7 +116,9 @@ void CardManager::InsertInternal(UINT slot, SS_CARDTYPE type)
 	case CT_Uthernet2:
 		m_slot[slot] = new Uthernet2(slot);
 		break;
-
+	case CT_FujiNet:
+		m_slot[slot] = new FujiNet(slot);
+		break;
 	case CT_LanguageCard:
 		_ASSERT(m_pLanguageCard == NULL);
 		if (m_pLanguageCard) break;	// Only support one language card

@@ -25,6 +25,7 @@ enum SS_CARDTYPE
 	CT_SNESMAX,			// 2 port Nintendo NES/SNES controller serial interface card
 	CT_VidHD,
 	CT_Uthernet2,
+	CT_FujiNet,			// FujiNet Smartcard emulator bridge
 	CT_MegaAudio,		// Soundcard
 	CT_SDMusic,			// Soundcard
 };
